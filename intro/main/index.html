@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Stars/patrunjel</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="anim.css">
+<style>
+ body {
+opacity:0;
+transition: 100ms opacity;
+}
+</style>
+</head>
+<body>
+  <div class="wrapper fade-in"></div>
+<!-- partial:index.partial.html -->
+<canvas id="bgCanvas"></canvas>
+<!-- partial -->
+  <script  src="./script.js"></script>
+<script>
+  function pageLoaded() {
+        document.querySelector("body").style.opacity = 1;
+}
+window.onload = pageLoaded;
+</script>
+</body>
+</html>
